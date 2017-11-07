@@ -4,6 +4,6 @@ go:
   - 1.7
   - 1.8
   - master
-
-script:
+install:
+  - go get github.com/go-macaron/session
   - go build -buildmode=c-shared -o session.so session.go
