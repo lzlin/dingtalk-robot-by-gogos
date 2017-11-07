@@ -1,3 +1,9 @@
 language: go
 go:
-  - 1.8.3
+  - 1.6
+  - 1.7
+  - 1.8
+  - master
+
+script:
+  - go build -buildmode=c-shared -o session.so session.go
